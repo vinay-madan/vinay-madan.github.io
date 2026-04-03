@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay Madan | Technical Lead & DevOps</title>
-    <!-- Lightweight CSS for a clean look -->
+    <!-- Professional theme -->
     <link rel="stylesheet" href="https://jsdelivr.net">
     <style>
-        body { max-width: 800px; margin: auto; padding: 2rem; line-height: 1.6; }
-        .icon-container img { margin: 5px; transition: transform 0.2s; }
+        :root { --bg-color: #ffffff; --text-color: #222; --form-bg: #f4f4f4; }
+        [data-theme="dark"] { --bg-color: #1a1a1a; --text-color: #e0e0e0; --form-bg: #2d2d2d; }
+
+        body { 
+            max-width: 800px; margin: auto; padding: 2rem; line-height: 1.6; 
+            background-color: var(--bg-color); color: var(--text-color); transition: 0.3s;
+        }
+        
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .theme-toggle { padding: 8px 15px; cursor: pointer; border-radius: 20px; border: 1px solid #ccc; background: var(--form-bg); color: var(--text-color); font-weight: bold; }
+        
+        .icon-container img { margin: 10px; transition: transform 0.2s; vertical-align: middle; }
         .icon-container img:hover { transform: scale(1.2); }
-        .badge-container img { margin-right: 10px; }
+        
+        form { background: var(--form-bg); padding: 20px; border-radius: 8px; margin-top: 20px; border: 1px solid #444; }
+        input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; border-radius: 4px; border: 1px solid #666; background: var(--bg-color); color: var(--text-color); }
+        
+        button[type="submit"] { width: 100%; background-color: #0077B5; color: white; border: none; cursor: pointer; font-weight: bold; padding: 10px; }
+        button[type="submit"]:hover { background-color: #005a8a; }
+        
+        .badge-container img { margin-right: 10px; margin-top: 10px; }
+        hr { border: 0; border-top: 1px solid #444; margin: 2rem 0; }
     </style>
 </head>
-<body>
+<body data-theme="light">
 
-    <header>
-        <h1>Hi there 👋 I'm Vinay Madan</h1>
+    <header class="header-flex">
+        <h1>Hi there 👋 I'm Vinay</h1>
+        <button class="theme-toggle" id="theme-btn">🌙 Dark Mode</button>
     </header>
 
     <section>
@@ -28,18 +47,16 @@
         <ul>
             <li>🔭 I’m currently working with <strong>MVSI</strong> as <strong>Technical Lead</strong></li>
             <li>🌱 I’m currently learning <strong>Advanced Kubernetes & Agentic AI</strong></li>
-            <li>👯 I’m looking to collaborate on Web Development, AI Techonologies</li>
+            <li>👯 I’m looking to collaborate on Web Development, AI Technologies</li>
             <li>💬 Ask me about IaC, Cloud, DevOps</li>
-            <li>📫 How to reach me: <a href="mailto:vinay.it@gmail.com">vinay.it@gmail.com</a></li>
-            <li>😄 Pronouns: He/Him</li>
         </ul>
 
         <div class="badge-container">
-            <a href="https://linkedin.com/in/vinay-madan" target="_blank">
-                <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://shields.io" alt="LinkedIn">
             </a>
-            <a href="https://dev.to/vinay_madan" target="_blank">
-                <img src="https://img.shields.io/badge/DEV%20Community-%230A0A0A.svg?&style=for-the-badge&logo=dev.to&logoColor=white" alt="DEV Community">
+            <a href="https://dev.to" target="_blank">
+                <img src="https://shields.io" alt="DEV Community">
             </a>
         </div>
     </section>
@@ -49,27 +66,53 @@
     <section>
         <h2>Languages and Tools</h2>
         <div class="icon-container">
-            <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="typescript""")/>></a>
-            <a href="https://vuejs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" width="40" height="40" alt="vuejs""")/>></a>
-            <a href="https://reactjs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40" alt="react""")/>></a>
-            <a href="https://azure.microsoft.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" width="40" height="40" alt="azure""")/>></a>
-            <a href="https://www.gnu.org/software/bash/" target="_blank"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" width="40" height="40" alt="bash""")/>></a>
-            <a href="https://www.docker.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" width="40" height="40" alt="docker""")/>></a>
-            <a href="https://kubernetes.io" target="_blank"><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" width="40" height="40" alt="kubernetes""")/>></a>
-            <a href="https://nodejs.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40" alt="nodejs""")/>></a>
-            <a href="https://golang.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="40" height="40" alt="go""")/>></a>
-            <a href="https://www.jenkins.io" target="_blank"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" width="40" height="40" alt="jenkins""")/>></a>
-            <a href="https://www.mongodb.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="40" height="40" alt="mongodb""")/>></a>
-            <a href="https://www.postgresql.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="40" height="40" alt="postgresql""")/>></a>
+            <img src="https://githubusercontent.com" width="40" height="40" alt="typescript">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="vuejs">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="react">
+            <img src="https://vectorlogo.zone" width="40" height="40" alt="azure">
+            <img src="https://vectorlogo.zone" width="40" height="40" alt="bash">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="docker">
+            <img src="https://vectorlogo.zone" width="40" height="40" alt="kubernetes">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="nodejs">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="go">
+            <img src="https://vectorlogo.zone" width="40" height="40" alt="jenkins">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="mongodb">
+            <img src="https://githubusercontent.com" width="40" height="40" alt="postgresql">
         </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form action="https://formspree.io" method="POST">
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email">
+            <textarea name="message" rows="4" required placeholder="How can I help?"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
         <br>
-        <a href="https://linkedin.com/in/vinay-madan">
-            <img src="https://komarev.com" alt="Profile Views">
-        </a>
+        <img src="https://komarev.com" alt="Profile Views">
     </footer>
+
+    <script>
+        const btn = document.getElementById("theme-btn");
+        const body = document.body;
+        const currentTheme = localStorage.getItem("theme") || "light";
+
+        body.setAttribute("data-theme", currentTheme);
+        btn.innerHTML = currentTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+
+        btn.onclick = () => {
+            let theme = body.getAttribute("data-theme") === "light" ? "dark" : "light";
+            body.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+            btn.innerHTML = theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+        };
+    </script>
 
 </body>
 </html>
